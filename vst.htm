@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="css/vst.css" rel="stylesheet" type="text/css">
+<script>
+function vis(id)
+{
+ document.getElementById(id+'_details').className = 'visible';
+}
+
+function hid(id)
+{
+ document.getElementById(id+'_details').className = 'hidden';
+}
+
+function Chage_Row_State(id)
+{
+  if (document.getElementById(id+'_details').className == 'hidden')
+  {
+    vis(id);
+    document.getElementById(id+'_image').src = 'img_gen/close.gif';
+  }
+  else
+  {
+    hid(id);
+    document.getElementById(id+'_image').src = 'img_gen/drop.gif';
+  }
+
+}
+</script>
+<link href="css/redefined.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table width="400" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+
+
+<table width="400" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="20" align="center" valign="middle" bgcolor="#99CCFF">
+      <img src="img_gen/drop.gif" id="row_1_image" onClick="Open_Row('1')" style="cursor:pointer;">
+    </td>
+    <td width="343" bgcolor="#99CCFF">
+      table header
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td height="1" >
+
+      <table border="0" width="100%" cellspacing="0" cellpadding="0" id="row_1_details" class="hidden">
+        <tr>
+          <td>asdf</td>
+        </tr>
+        <tr>
+          <td bgcolor="#999999">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#999999">&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+
+  	</td>
+  </tr>
+</table>
+
+</body>
+</html>
